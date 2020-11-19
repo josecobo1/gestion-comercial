@@ -1,2 +1,8 @@
 <p>home works!</p>
 
+Con el pipe date sin parámetros: {{ fecha|date }}<br>
+Formato abreviado: {{ fecha | date:'dd/MM/yyyy' }}<br>
+
+Con un ejemplo del parámetro de formato: {{ fecha|date :'full' }}<br>
+Añadiendo la zona horaria española: {{ fecha|date :'full' :'+0100'}}<br>
+Con notación catalana: {{ fecha|date :'full' :'+0100' :'ca-ES-VALENCIA' }}<br>

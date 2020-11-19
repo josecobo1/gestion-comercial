@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Customer } from 'src/app/shared/interfaces/customer';
+import { list } from '../../data/customers';
 @Component({
   selector: 'app-customer-list',
   templateUrl: './customer-list.component.html',
@@ -7,13 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomerListComponent implements OnInit {
 
-  list = [
+  customers:Customer[];
+/*   list = [
     {id:1, name: 'John Smith'},
     {id:2, name: 'Anna Highland'},
-    {id:3, name: 'Emile Poiret'}
-  ]
-  constructor() { }
+    {id:3, name: 'Emile Poiret'},
+    {id:4, name: 'Emile Poiret'},
+    {id:5, name: 'Emile Poiret'},
 
+  ] */
+  constructor() {
+    this.customers=list;
+   }
+
+  customerTrackerFunction(index: number, customer: any) {
+    return customer.id;
+}
   ngOnInit(): void {
   }
 

@@ -1,32 +1,50 @@
-import { MatMenuModule } from '@angular/material/menu';
-import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    MatToolbarModule,
+   imports: [
     MatButtonModule,
-    MatIconModule,
-    MatListModule,
-    MatMenuModule,
-    FlexLayoutModule
-  ],
-  exports:[
+    MatSidenavModule,
     MatToolbarModule,
-    MatButtonModule,
     MatIconModule,
+    MatCheckboxModule,
     MatListModule,
+    MatDividerModule,
+    MatFormFieldModule,
     MatMenuModule,
-    FlexLayoutModule
-  ]
+    MatCardModule,
+    MatInputModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatDividerModule
+     ],
+  exports: [
+    MatButtonModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatCheckboxModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatInputModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatDividerModule]
+
 })
 export class MaterialModule { }
